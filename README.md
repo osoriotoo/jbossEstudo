@@ -2,7 +2,7 @@
 
 ##Wildfly connection MySQL
 
-'''
+```
 <datasource jndi-name="java:jboss/datasources/casadocodigoDS" pool-name="casadocodigoDS">
     <connection-url>jdbc:mysql://localhost:3306/casadocodigo</connection-url>
     <driver>mysql</driver>
@@ -19,11 +19,11 @@
 <driver name="mysql" module="com.mysql">
     <xa-datasource-class>com.mysql.jdbc.Driver</xa-datasource-class>
 </driver>
-'''
+```
 
 ##modules.xml
 
-'''
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <module xmlns="urn:jboss:module:1.3" name="com.mysql">
     <resources>
@@ -33,6 +33,6 @@
         <module name="javax.api"/>
     </dependencies>
 </module>
-'''
+```
 
 Fechou! :+1:

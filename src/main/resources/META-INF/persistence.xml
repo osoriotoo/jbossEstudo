@@ -1,0 +1,14 @@
+
+<persistence>
+	<persistence-unit name="unidadeTeste" transaction-type="JTA">
+		<description>Unidade de Persistência </description>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:jboss/datasources/casadocodigo-ds</jta-data-source>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>      
